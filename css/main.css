@@ -15,7 +15,6 @@
 * {
     font-family: "Raleway";
 }
-
 html {
     color: #222;
     font-size: 1em;
@@ -246,7 +245,6 @@ textarea {
     background-color: #2c3e50;
     border-color: #2c3e50;
     border-radius: 0px;
-    z-index: 9999;
 }
 .navbar-default .navbar-brand {
     background-color: #2c3e50;
@@ -332,51 +330,76 @@ textarea {
 .container-fluid {
     background-color: #2c3e50;
 }
+
 /*------------------- /NAVBAR ---------------------------*/
 
+
 /*=================== INDEX =============================*/
-.inde{
-background-image: url("../img/kenya.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-padding-top: 2%;
-padding-bottom: 9%;
-padding-right: 2%;
+
+.inde {
+    background-image: url("../img/kenya.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 2%;
+    padding-bottom: 9%;
+    padding-right: 2%;
+}
+.inde h1 {
+    text-align: center;
+    padding-top: 25px;
+    color: white;
+    font-size: 3.5em;
+    font-family: 'raleway';
+    font-weight: bold;
+}
+.chooselang {
+    padding-top: 5%;
+    color: white;
+    font-weight: bold;
+}
+.chooselang img {
+    border-radius: 30px;
+}
+.chooselang a:hover {
+    border-radius: 30px;
+    border: 2px solid gray;
+    height: 300px;
+    width: 500px;
+}
+.countrycover {
+    background-image: url("../img/southafrica.jpg");
+    background-repeat: no-repeat;
+    height: 960px;
+    padding-bottom: 20px;
 }
 
-.inde h1{
+.countrycover h1{
+  color: white;
   text-align: center;
-  padding-top: 25px;
-  color: white;
-  font-size: 3.5em;
-  font-family: 'raleway';
+  padding-top: 8%;
+  font-size: 2.2em;
   font-weight: bold;
 }
 
-.chooselang{
-  padding-top: 5%;
-  color: white;
-  font-weight: bold;
+.countryfr {
+    background-color: #f1f1f1;
+    border: 1px solid lightgray;
 }
 
-.chooselang img{
-  border-radius: 30px;
+.countryfr img {
+    padding: 10px;
 }
-
-.chooselang a :hover{
-  border-radius: 30px;
-  border: 2px solid gray;
-  height: 300px;
-  width: 500px;
-}
-
-.countryfr img{
-  padding: 10px;
+.countrycover {
+    padding-bottom: 50px;
+    padding-top: -120px;
 }
 
 /*=================== /INDEX =============================*/
 
+
 /*=================== HOME ==============================*/
+
+
 /*------------------- CAROUSEL ---------------------------*/
 
 .boot_slider {
@@ -405,4 +428,6 @@ footer p {
 }
 
 /*------------------- /FOOTER ---------------------------*/
+
+
 /*=================== /HOME ==============================*/
