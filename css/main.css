@@ -334,6 +334,40 @@ textarea {
 /*------------------- /NAVBAR ---------------------------*/
 
 /*=================== INDEX =============================*/
+.inde{
+background-image: url("../img/kenya.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+padding-top: 2%;
+padding-bottom: 9%;
+padding-right: 2%;
+}
+
+.inde h1{
+  text-align: center;
+  padding-top: 25px;
+  color: white;
+  font-size: 3.5em;
+  font-family: 'raleway';
+  font-weight: bold;
+}
+
+.chooselang{
+  padding-top: 5%;
+  color: white;
+  font-weight: bold;
+}
+
+.chooselang img{
+  border-radius: 30px;
+}
+
+a :hover{
+  border-radius: 30px;
+  border: 2px solid gray;
+  height: 300px;
+  width: 500px;
+}
 
 /*=================== /INDEX =============================*/
 
