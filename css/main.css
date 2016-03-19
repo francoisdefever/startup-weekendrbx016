@@ -1,15 +1,20 @@
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
 
+* {
+    font-family: "Raleway";
+}
 html {
     color: #222;
     font-size: 1em;
@@ -28,7 +33,6 @@ html {
     background: #b3d4fc;
     text-shadow: none;
 }
-
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -53,12 +57,7 @@ hr {
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+audio, canvas, iframe, img, svg, video {
     vertical-align: middle;
 }
 
@@ -96,24 +95,10 @@ textarea {
    ========================================================================== */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 
 /*
  * Hide visually and from screen readers
@@ -145,8 +130,7 @@ textarea {
  * https://www.drupal.org/node/897638
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -175,12 +159,12 @@ textarea {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.clearfix:before, .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
-
 .clearfix:after {
     clear: both;
 }
@@ -194,11 +178,7 @@ textarea {
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
-
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -209,183 +189,246 @@ textarea {
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
+    *, *:before, *:after, *:first-letter, *:first-line {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
-    a,
-    a:visited {
+    a, a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
+    a[href^="#"]:after, a[href^="javascript:"]:after {
         content: "";
     }
-
-    pre,
-    blockquote {
+    pre, blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
-
-    tr,
-    img {
+    tr, img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
-    p,
-    h2,
-    h3 {
+    p, h2, h3 {
         orphans: 3;
         widows: 3;
     }
-
-    h2,
-    h3 {
+    h2, h3 {
         page-break-after: avoid;
     }
 }
 
-
 /*------------------- NAVBAR ---------------------------*/
+
 .navbar-default {
-  background-color: #2c3e50;
-  border-color: #2c3e50;
-  border-radius: 0px;
+    background-color: #2c3e50;
+    border-color: #2c3e50;
+    border-radius: 0px;
+    z-index: 9999;
 }
 .navbar-default .navbar-brand {
-  background-color: #2c3e50;
-  color: #ecf0f1;
-}
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
     background-color: #2c3e50;
-  color: #3498db;
+    color: #ecf0f1;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    background-color: #2c3e50;
+    color: #3498db;
 }
 .navbar-default .navbar-text {
-      background-color: #2c3e50;
-  color: #ecf0f1;
+    background-color: #2c3e50;
+    color: #ecf0f1;
 }
 .navbar-default .navbar-nav > li > a {
-      background-color: #2c3e50;
-  color: #ecf0f1;
+    background-color: #2c3e50;
+    color: #ecf0f1;
 }
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-      background-color: #2c3e50;
-  color: #3498db;
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #2c3e50;
+    color: #3498db;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu {
-  background-color: #2c3e50;
+    background-color: #2c3e50;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a {
-      background-color: #2c3e50;
-  color: #ecf0f1;
+    background-color: #2c3e50;
+    color: #ecf0f1;
 }
-.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
-.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
-  color: #3498db;
-  background-color: #2c3e50;
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover, .navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+    color: #3498db;
+    background-color: #2c3e50;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
-  background-color: #2c3e50;
+    background-color: #2c3e50;
 }
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-  color: #3498db;
-  background-color: #2c3e50;
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #3498db;
+    background-color: #2c3e50;
 }
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #3498db;
-  background-color: #2c3e50;
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #3498db;
+    background-color: #2c3e50;
 }
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-  color: #3498db;
-  background-color: #2c3e50;
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #3498db;
+    background-color: #2c3e50;
 }
 .navbar-default .navbar-toggle {
-  border-color: #2c3e50;
+    border-color: #2c3e50;
 }
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-  background-color: #2c3e50;
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #2c3e50;
 }
 .navbar-default .navbar-toggle .icon-bar {
-background-color: #2c3e50;
-}
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
     background-color: #2c3e50;
-  border-color: #ecf0f1;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    background-color: #2c3e50;
+    border-color: #ecf0f1;
 }
 .navbar-default .navbar-link {
-      background-color: #2c3e50;
-  color: #ecf0f1;
+    background-color: #2c3e50;
+    color: #ecf0f1;
 }
 .navbar-default .navbar-link:hover {
-          background-color: #2c3e50;
-  color: #3498db;
-}
-
-@media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-          background-color: #2c3e50;
-    color: #ecf0f1;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-          background-color: #2c3e50;
-    color: #3498db;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #3498db;
     background-color: #2c3e50;
-  }
+    color: #3498db;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        background-color: #2c3e50;
+        color: #ecf0f1;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        background-color: #2c3e50;
+        color: #3498db;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #3498db;
+        background-color: #2c3e50;
+    }
 }
 .container-fluid {
     background-color: #2c3e50;
 }
 
 /*------------------- /NAVBAR ---------------------------*/
+
+
+/*=================== INDEX =============================*/
+
+.inde {
+    background-image: url("../img/kenya.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 2%;
+    padding-bottom: 9%;
+    padding-right: 2%;
+}
+.inde h1 {
+    text-align: center;
+    padding-top: 25px;
+    color: white;
+    font-size: 3.5em;
+    font-family: 'raleway';
+    font-weight: bold;
+}
+.chooselang {
+    padding-top: 5%;
+    color: white;
+    font-weight: bold;
+}
+.chooselang img {
+    border-radius: 30px;
+}
+.chooselang a:hover {
+    border-radius: 30px;
+    border: 2px solid gray;
+    height: 300px;
+    width: 500px;
+}
+.countrycover {
+    background-image: url("../img/southafrica.jpg");
+    background-repeat: no-repeat;
+    height: 960px;
+    padding-bottom: 20px;
+}
+
+.countrycover h1{
+  color: white;
+  text-align: center;
+  padding-top: 8%;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+.countryfr {
+    background-color: #f1f1f1;
+    border: 1px solid lightgray;
+    padding-bottom: 20px;
+}
+
+.countryfr img {
+    padding: 10px;
+}
+.countrycover {
+    padding-bottom: 50px;
+    padding-top: -120px;
+}
+
+/*=================== /INDEX =============================*/
+
+
+/*=================== HOME ==============================*/
+
+
+/*------------------- CAROUSEL ---------------------------*/
+
+.boot_slider {
+    margin-top: -120px;
+}
+
+/*------------------- /CAROUSEL ---------------------------*/
+
+
+/*------------------- FOOTER ---------------------------*/
+
+footer {
+    background-color: #2c3e50;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+footer p {
+    color: white;
+}
+.fa-4x {
+    color: #3498db;
+    height: 100px;
+    width: 150px;
+}
+
+/*------------------- /FOOTER ---------------------------*/
+
+
+/*=================== /HOME ==============================*/
