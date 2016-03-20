@@ -26,6 +26,14 @@ html {
     margin-left: 0px;
 }
 
+.jumbotron {
+    padding-bottom: 30px;
+}
+
+.container {
+    padding-bottom: 30px;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
