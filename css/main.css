@@ -27,7 +27,11 @@ html {
 }
 
 .jumbotron {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+}
+
+.container {
+    padding-bottom: 30px;
 }
 
 /*
