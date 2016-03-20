@@ -458,12 +458,22 @@ footer p {
 
 /*=================== /portrait ==============================*/
 
-.portrait{
-  
+.portraitcover {
+    /*margin-top: -50px;*/
+    padding-bottom: 50px;
 }
 
-.portrait h1{
+.portrait img{
+  height: 250px;
+  width: 250px;
+}
+
+.portraitcover h1{
+  /*padding-top: 25%;*/
+  /*color: lightgray;*/
   text-align: center;
+  font-size: 3.2em;
+  font-weight: bold;
 }
 
 /*=================== /portrait ==============================*/
