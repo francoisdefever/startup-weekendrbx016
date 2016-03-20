@@ -476,4 +476,9 @@ footer p {
   font-weight: bold;
 }
 
+.portrait a :hover{
+  height: 260px;
+  width: 260px;
+}
+
 /*=================== /portrait ==============================*/
